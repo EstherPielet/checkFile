@@ -7,7 +7,7 @@ class Record:
         self.id = _extract_id(line)
         self.pos = pos_in_file
         self.is_ini = is_ini
-        self.idx = idx
+        self.index = idx
 
     def get_line(self, file):
         file.seek(self.pos)

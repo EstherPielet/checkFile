@@ -15,7 +15,7 @@ class SingleRecodeTest(ABC):
 
 class INI001(SingleRecodeTest):
     def is_supported(self, rec):
-        return rec.id == 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         if record.id != 'A000':
@@ -24,7 +24,7 @@ class INI001(SingleRecodeTest):
 
 class INI004(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         numeric = line[34:48]
@@ -36,7 +36,7 @@ class INI004(SingleRecodeTest):
 
 class INI005(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         my_str = line[49:56]
@@ -48,7 +48,7 @@ class INI005(SingleRecodeTest):
 
 class INI006(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.is_ini and rec.index == 1
 
     def check(self, record, line, file):
         numeric = line[64:57]
@@ -60,7 +60,7 @@ class INI006(SingleRecodeTest):
 
 class INI007(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         numeric = line[65:84]
@@ -72,7 +72,7 @@ class INI007(SingleRecodeTest):
 
 class INI008(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         alpha = line[85:104]
@@ -84,7 +84,7 @@ class INI008(SingleRecodeTest):
 
 class INI009(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         numeric = line[65:84]
@@ -96,7 +96,7 @@ class INI009(SingleRecodeTest):
 
 class INI010(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         alpha = line[114:133]
@@ -108,7 +108,7 @@ class INI010(SingleRecodeTest):
 
 class INI011(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         char = line[134:134]
@@ -118,7 +118,7 @@ class INI011(SingleRecodeTest):
 
 class INI012(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         alpha = line[135:184]
@@ -130,7 +130,7 @@ class INI012(SingleRecodeTest):
 
 class INI013(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         char = line[185:185]
@@ -140,7 +140,7 @@ class INI013(SingleRecodeTest):
 
 class INI014(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         char = line[186:186]
@@ -150,7 +150,7 @@ class INI014(SingleRecodeTest):
 
 class INI015(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         alpha = line[215:264]
@@ -162,7 +162,7 @@ class INI015(SingleRecodeTest):
 
 class INI016(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         numeric = line[367:374]
@@ -174,7 +174,7 @@ class INI016(SingleRecodeTest):
 
 class INI017(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         numeric = line[375:382]
@@ -186,7 +186,7 @@ class INI017(SingleRecodeTest):
 
 class INI018(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         numeric = line[383:390]
@@ -198,7 +198,7 @@ class INI018(SingleRecodeTest):
 
 class INI019(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         numeric = line[391:394]
@@ -210,7 +210,7 @@ class INI019(SingleRecodeTest):
 
 class INI020(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         numeric = line[395:395]
@@ -222,7 +222,7 @@ class INI020(SingleRecodeTest):
 
 class INI021(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         char = line[396:396]
@@ -232,7 +232,7 @@ class INI021(SingleRecodeTest):
 
 class INI022(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         alpha = line[397:416]
@@ -244,7 +244,7 @@ class INI022(SingleRecodeTest):
 
 class INI023(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         alpha = line[417:419]
@@ -256,7 +256,7 @@ class INI023(SingleRecodeTest):
 
 class INI024(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A000'
+        return rec.id == 1 and rec.is_ini
 
     def check(self, record, line, file):
         char = line[420:420]
@@ -267,11 +267,11 @@ class INI024(SingleRecodeTest):
 # ? what should i return in get_type function
 class INI025(SingleRecodeTest):
     def is_supported(self, rec):
-        return rec.is_ini and 2 <= rec.idx < 7
+        return rec.is_ini and 2 <= rec.index < 7
 
     def check(self, record, line, file):
         alpha = line[0:4]
-        pattern = re.compile(r"(B100|B110|C100|D100|D1200|M100)")
+        pattern = re.compile(r"(B100|B110|C100|D110|D120|M100)")
         match = pattern.findall(alpha)
         if not match:
             return "שדה  1050 אינו תקין"
@@ -279,8 +279,22 @@ class INI025(SingleRecodeTest):
 
 class INI028(SingleRecodeTest):
     def is_supported(self, rec):
-        return 'A100'
+        return rec.index > 0 and rec.index <= 7
 
     def check(self, record, line, file):
-        if len(line) != 466:
+        if record.index == 1 and len(line) != 467:
             return "אורך רשומה A100 לא תקין"
+        elif len(line) != 20:
+            return f" אינו תקין{record.id}אורך הרשומה"
+
+
+class INI0(SingleRecodeTest):
+    def is_supported(self, rec):
+        return rec.is_ini and 2 <= rec.index < 7
+
+    def check(self, record, line, file):
+        alpha = line[0:4]
+        pattern = re.compile(r"(B100|B110|C100|D110|D120|M100)")
+        match = pattern.findall(alpha)
+        if not match:
+            return "שדה  1050 אינו תקין"
